@@ -238,65 +238,121 @@
   </header>
 
   <main>
-    <!-- HERO SECTION: Clean Digital Bookstore Presentation -->
+    <!-- HERO SECTION: Premium High-Converting Bookstore Presentation -->
     <section class="store-hero">
-      <div class="container">
+      <div class="hero-bg-glow glow-gold"></div>
+      <div class="hero-bg-glow glow-blue"></div>
+
+      <div class="container hero-container">
         
-        <div class="hero-center-content">
-          <div class="category-pill-label" data-key="heroOverline">
-            PREMIER DIGITAL BOOKSTORE • HARFNUQTA.STORE
+        <!-- Left: Text & Compelling CTAs -->
+        <div class="hero-copy-column">
+          <div class="hero-badge">
+            <span class="badge-live-pulse"></span>
+            <span data-key="heroOverline">OFFICIAL PUBLISHER STORE • HARFNUQTA.STORE</span>
           </div>
           
-          <h1 class="store-hero-headline" data-key="heroHeadline">
-            Authentic Digital PDF Books on Politics, History & Thought
+          <h1 class="store-hero-headline">
+            Authentic Digital PDF Books on <span class="gold-gradient-text">Politics, History & Thought</span>
           </h1>
           
           <p class="store-hero-subtext" data-key="heroSubtext">
             Discover verified, high-resolution unabridged eBooks. Download instantly on your mobile, tablet, or PC with hassle-free local payments.
           </p>
 
-          <!-- Quick Category Filters in Hero -->
-          <div class="quick-category-pills">
-            <button class="cat-pill active" onclick="applyFilter('all', this)" data-key="catAll">All Books (<span id="countAll">4</span>)</button>
-            <button class="cat-pill" onclick="applyFilter('politics', this)" data-key="catPolitics">Politics & History</button>
-            <button class="cat-pill" onclick="applyFilter('philosophy', this)" data-key="catPhilosophy">Philosophy & Thought</button>
-            <button class="cat-pill" onclick="applyFilter('urdu', this)" data-key="catUrdu">Urdu Editions (اردو)</button>
-            <button class="cat-pill" onclick="applyFilter('english', this)" data-key="catEnglish">English Editions</button>
+          <div class="hero-actions-row">
+            <a href="#featured-spotlight" class="btn btn-hero-gold">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <span>Explore "Iqtidaar Ke Paar"</span>
+            </a>
+            <a href="#store-section" class="btn btn-hero-outline">
+              <span>Browse Catalog ↓</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges & Social Proof -->
+          <div class="hero-trust-bar">
+            <div class="trust-stars-wrap">
+              <div class="stars-gold">★★★★★</div>
+              <span class="trust-score">4.9/5 Scholarly Rating</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-feature">
+              <span class="trust-check">✓</span>
+              <span>100% Unabridged PDFs</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-feature">
+              <span class="trust-check">⚡</span>
+              <span>Instant WhatsApp Delivery</span>
+            </div>
           </div>
         </div>
 
-        <!-- Trust Features Strip -->
+        <!-- Right: 3D Perspective Floating Book Showcase -->
+        <div class="hero-visual-column">
+          <div class="hero-book-stage">
+            
+            <a href="#featured-spotlight" class="book-3d-card" title="Click to view featured book">
+              <div class="book-spine-effect"></div>
+              <img src="front_cover_roman_urdu.png" alt="Iqtidaar Ke Paar Book Cover" class="book-cover-image">
+              <div class="book-floating-tag">🔥 Featured Bestseller</div>
+            </a>
+
+            <!-- Floating Micro Cards -->
+            <div class="hero-floating-card card-top-right">
+              <span class="float-icon">⚡</span>
+              <div>
+                <strong>Instant Delivery</strong>
+                <span>Direct to your WhatsApp</span>
+              </div>
+            </div>
+
+            <div class="hero-floating-card card-bottom-left">
+              <span class="float-icon">📖</span>
+              <div>
+                <strong>325 Pages Complete</strong>
+                <span>High-Res Print Quality</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Features Strip Beneath Hero -->
+      <div class="container">
         <div class="store-perks-row">
           <div class="perk-box">
-            <div class="perk-icon">⚡</div>
+            <div class="perk-icon-circle">⚡</div>
             <div class="perk-text">
               <strong data-key="perk1Title">Instant Digital Delivery</strong>
               <span data-key="perk1Desc">Immediate file access on WhatsApp & Email</span>
             </div>
           </div>
           <div class="perk-box">
-            <div class="perk-icon">📖</div>
+            <div class="perk-icon-circle">📖</div>
             <div class="perk-text">
               <strong data-key="perk2Title">Verified Full Editions</strong>
               <span data-key="perk2Desc">100% unabridged official publisher copies</span>
             </div>
           </div>
           <div class="perk-box">
-            <div class="perk-icon">💳</div>
+            <div class="perk-icon-circle">💳</div>
             <div class="perk-text">
               <strong data-key="perk3Title">Easy Local Payments</strong>
               <span data-key="perk3Desc">Easypaisa, JazzCash & Direct Bank Transfer</span>
             </div>
           </div>
           <div class="perk-box">
-            <div class="perk-icon">📱</div>
+            <div class="perk-icon-circle">📱</div>
             <div class="perk-text">
               <strong data-key="perk4Title">Universal Compatibility</strong>
               <span data-key="perk4Desc">Works on iPhone, Android, iPad & Kindle</span>
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -312,6 +368,15 @@
           <div class="catalog-status" id="catalogResultsCount">
             Showing all 4 publications
           </div>
+        </div>
+
+        <!-- Quick Category Filters in Catalog -->
+        <div class="quick-category-pills">
+          <button class="cat-pill active" onclick="applyFilter('all', this)" data-key="catAll">All Books (<span id="countAll">4</span>)</button>
+          <button class="cat-pill" onclick="applyFilter('politics', this)" data-key="catPolitics">Politics & History</button>
+          <button class="cat-pill" onclick="applyFilter('philosophy', this)" data-key="catPhilosophy">Philosophy & Thought</button>
+          <button class="cat-pill" onclick="applyFilter('urdu', this)" data-key="catUrdu">Urdu Editions (اردو)</button>
+          <button class="cat-pill" onclick="applyFilter('english', this)" data-key="catEnglish">English Editions</button>
         </div>
 
         <!-- Books Grid -->

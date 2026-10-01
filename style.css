@@ -348,96 +348,370 @@ body.lang-ur .header-search input {
   color: var(--primary);
 }
 
-/* STORE HERO SECTION */
+/* ==========================================================================
+   PREMIUM STORE HERO SECTION (2-Column 3D Showcase)
+   ========================================================================== */
 .store-hero {
-  padding: 48px 0 36px;
-  background: linear-gradient(180deg, var(--bg-subtle) 0%, #ffffff 100%);
-  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
+  padding: 64px 0 54px;
+  background: radial-gradient(circle at 85% 25%, rgba(212, 175, 122, 0.16) 0%, transparent 45%),
+              radial-gradient(circle at 15% 35%, rgba(30, 58, 138, 0.28) 0%, transparent 50%),
+              #0a0f1d;
+  color: #ffffff;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.hero-center-content {
-  text-align: center;
-  max-width: 780px;
-  margin: 0 auto;
+.hero-bg-glow {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 1;
 }
 
-.category-pill-label {
-  display: inline-block;
-  font-size: 0.75rem;
+.glow-gold {
+  top: 10%;
+  right: 15%;
+  width: 450px;
+  height: 450px;
+  background: rgba(212, 175, 122, 0.12);
+}
+
+.glow-blue {
+  bottom: 10%;
+  left: 5%;
+  width: 500px;
+  height: 500px;
+  background: rgba(30, 58, 138, 0.25);
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+}
+
+body.lang-ur .hero-container {
+  direction: rtl;
+}
+
+/* Left: Copy Column */
+.hero-copy-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+body.lang-ur .hero-copy-column {
+  align-items: flex-start;
+  text-align: right;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
-  color: var(--primary);
-  background: var(--primary-light);
-  border: 1px solid var(--primary-border);
-  padding: 4px 12px;
-  border-radius: 20px;
-  margin-bottom: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f5eedb;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 175, 122, 0.35);
+  padding: 6px 16px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.badge-live-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 10px #22c55e;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
 }
 
 .store-hero-headline {
-  font-size: 2.5rem;
+  font-size: 2.85rem;
   font-weight: 800;
-  color: var(--text-dark);
-  line-height: 1.25;
-  letter-spacing: -0.5px;
-  margin-bottom: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  letter-spacing: -0.8px;
+  margin-bottom: 18px;
+}
+
+body.lang-ur .store-hero-headline {
+  font-size: 2.4rem;
+  line-height: 1.7;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #fde68a 35%, #d4af7a 75%, #fef3c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .store-hero-subtext {
-  font-size: 1.1rem;
-  color: var(--text-body);
-  line-height: 1.7;
-  margin-bottom: 28px;
+  font-size: 1.12rem;
+  color: #94a3b8;
+  line-height: 1.75;
+  margin-bottom: 32px;
+  max-width: 580px;
 }
 
-/* Category Pills in Hero */
-.quick-category-pills {
+body.lang-ur .store-hero-subtext {
+  font-size: 1.15rem;
+  line-height: 2;
+}
+
+.hero-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+
+.btn-hero-gold {
+  background: linear-gradient(135deg, #d4af7a 0%, #b88e55 100%);
+  color: #0a0f1d !important;
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  padding: 13px 26px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgba(212, 175, 122, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.25s ease;
+}
+
+.btn-hero-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(212, 175, 122, 0.5);
+  background: linear-gradient(135deg, #e3c498 0%, #c4995f 100%);
+}
+
+.btn-hero-outline {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff !important;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 13px 22px;
+  border-radius: var(--radius-md);
+  transition: all 0.25s ease;
+}
+
+.btn-hero-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.hero-trust-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.82rem;
+  color: #94a3b8;
+  padding-top: 8px;
+  flex-wrap: wrap;
+}
+
+.trust-stars-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stars-gold {
+  color: #facc15;
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+}
+
+.trust-score {
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.trust-divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.trust-feature {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.trust-check {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* Right: Visual 3D Book Column */
+.hero-visual-column {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 36px;
+  align-items: center;
 }
 
-.cat-pill {
-  background: #ffffff;
-  border: 1px solid var(--border-subtle);
-  color: var(--text-body);
-  font-family: inherit;
-  font-size: 0.88rem;
-  font-weight: 500;
-  padding: 7px 16px;
-  border-radius: 30px;
+.hero-book-stage {
+  position: relative;
+  perspective: 1200px;
+  padding: 30px;
+}
+
+.book-3d-card {
+  position: relative;
+  display: block;
+  width: 285px;
+  height: 440px;
+  border-radius: 6px 14px 14px 6px;
+  box-shadow: -18px 25px 50px rgba(0, 0, 0, 0.75), 0 0 70px rgba(212, 175, 122, 0.2);
+  transform: rotateY(-15deg) rotateX(4deg);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
   cursor: pointer;
-  transition: var(--transition);
+  background: #08090b;
 }
 
-.cat-pill:hover, .cat-pill.active {
-  background: var(--primary);
+.book-3d-card:hover {
+  transform: rotateY(-5deg) rotateX(2deg) translateY(-10px);
+  box-shadow: -22px 35px 65px rgba(0, 0, 0, 0.85), 0 0 95px rgba(212, 175, 122, 0.35);
+}
+
+.book-cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px 14px 14px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: block;
+}
+
+.book-spine-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.55), rgba(255,255,255,0.25) 30%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.05));
+  border-radius: 6px 0 0 6px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.book-floating-tag {
+  position: absolute;
+  top: 18px;
+  right: -12px;
+  background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
   color: #ffffff;
-  border-color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(239, 68, 68, 0.45);
+  z-index: 3;
 }
 
-/* Store Perks Strip */
+/* Floating Micro Cards */
+.hero-floating-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  animation: float-gentle 4s ease-in-out infinite alternate;
+}
+
+.card-top-right {
+  top: 16px;
+  right: -30px;
+}
+
+.card-bottom-left {
+  bottom: 24px;
+  left: -32px;
+  animation-delay: -2s;
+}
+
+@keyframes float-gentle {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-8px); }
+}
+
+.float-icon {
+  font-size: 1.35rem;
+}
+
+.hero-floating-card strong {
+  display: block;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.hero-floating-card span {
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+/* Responsive Perks Row Under Hero */
 .store-perks-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  background: #ffffff;
-  border: 1px solid var(--border-subtle);
+  margin-top: 48px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: var(--radius-lg);
-  padding: 18px 24px;
-  box-shadow: var(--shadow-sm);
+  padding: 20px 24px;
 }
 
 .perk-box {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
-.perk-icon {
-  font-size: 1.6rem;
+.perk-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
   flex-shrink: 0;
 }
 
@@ -447,13 +721,95 @@ body.lang-ur .header-search input {
 }
 
 .perk-text strong {
-  font-size: 0.9rem;
-  color: var(--text-dark);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .perk-text span {
   font-size: 0.78rem;
-  color: var(--text-muted);
+  color: #94a3b8;
+}
+
+/* Quick Category Pills in Catalog Section */
+.quick-category-pills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+
+.cat-pill {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-body);
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.cat-pill:hover, .cat-pill.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
+}
+
+/* Mobile Responsiveness for Hero */
+@media (max-width: 991px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    text-align: center;
+  }
+  .hero-copy-column {
+    align-items: center;
+  }
+  body.lang-ur .hero-copy-column {
+    align-items: center;
+    text-align: center;
+  }
+  .store-hero-headline {
+    font-size: 2.2rem;
+  }
+  .hero-actions-row {
+    justify-content: center;
+  }
+  .hero-trust-bar {
+    justify-content: center;
+  }
+  .store-perks-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .store-hero {
+    padding: 40px 0 32px;
+  }
+  .store-hero-headline {
+    font-size: 1.85rem;
+  }
+  .book-3d-card {
+    width: 220px;
+    height: 340px;
+  }
+  .card-top-right {
+    right: -10px;
+    top: -15px;
+  }
+  .card-bottom-left {
+    left: -15px;
+    bottom: -15px;
+  }
+  .store-perks-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* MAIN BOOKSTORE CATALOG SECTION */
