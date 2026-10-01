@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harfnuqta.store/sitemap.xml

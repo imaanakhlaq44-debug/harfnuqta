@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://harfnuqta.store/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://harfnuqta.store/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://harfnuqta.store/?lang=ur"/>
+    <image:image>
+      <image:loc>https://harfnuqta.store/front_cover_roman_urdu.png</image:loc>
+      <image:title>Iqtidaar Ke Paar / Beyond Power - Digital PDF Edition Cover</image:title>
+      <image:caption>Iqtidaar Ke Paar (اقتدار کے پار) - Hikmat, Siyasat, Muzahamat by Rashid Yousafzai and Muhammad Amin Asad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://harfnuqta.store/front_cover_cropped.jpg</image:loc>
+      <image:title>اقتدار کے پار (حکمت، سیاست، مزاحمت) - اردو پی ڈی ایف ایڈیشن</image:title>
+      <image:caption>مولانا فضل الرحمن کی حیات، مذہبی فکر، آئینی جدوجہد اور پارلیمانی سیاست کا تجزیاتی مطالعہ</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://harfnuqta.store/preview_b5_large_p29.png</image:loc>
+      <image:title>Inside Sample Page - Iqtidaar Ke Paar</image:title>
+      <image:caption>High quality typography and interior layout of Iqtidaar Ke Paar</image:caption>
+    </image:image>
+  </url>
+</urlset>
