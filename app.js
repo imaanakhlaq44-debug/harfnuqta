@@ -140,22 +140,40 @@ const translations = {
     navAbout: "About Us",
     navFaq: "Help & FAQs",
     btnHeaderBuy: "Instant Checkout",
-    heroOverline: "PREMIER DIGITAL BOOKSTORE • HARFNUQTA.STORE",
-    heroHeadline: "Authentic Digital PDF Books on Politics, History & Thought",
-    heroSubtext: "Discover verified, high-resolution unabridged eBooks. Download instantly on your mobile, tablet, or PC with hassle-free local payments.",
+    heroOverline: "OFFICIAL 2026 PUBLISHER RELEASE • DUST ON BOOKS",
+    heroKicker: "THE DEFINITIVE 325-PAGE POLITICAL BIOGRAPHY",
+    heroTitleMain: "Iqtidaar Ke Paar",
+    heroTitleUrdu: "(اقتدار کے پار)",
+    heroTagline: "Beyond Power: Wisdom, Politics, Resistance",
+    heroSubtext: "The landmark, document-backed political study of Maulana Fazlur Rehman's 40-year parliamentary journey, religious-political philosophy, coalition statecraft (MRD, MMA, PDM), and the inside story of the 18th & 26th Constitutional Amendments. Authored by Rashid Yousafzai & Muhammad Amin Asad.",
+    specPill1: "325 Pages (Unabridged)",
+    specPill2: "Instant WhatsApp & Email PDF",
+    specPill3: "Archival Records & Photos",
+    specPill4: "Mobile, iPad & Kindle Ready",
+    heroPriceLabel: "Launch Special Digital Edition:",
+    heroDiscountBadge: "SAVE 80%",
+    heroDeliveryNotice: "Direct Delivery within 2 Minutes",
+    heroBtnOrder: "Order Official PDF (PKR 500)",
+    heroBtnSample: "Read Free Sample Pages",
+    heroBtnCheckout: "Local Pay Options ↓",
+    heroTrustRating: "4.9/5 (184+ Verified Readers)",
+    heroTrustUnabridged: "100% Unabridged (325 Pages)",
+    ctrlFront: "Front Cover",
+    ctrlBack: "Back Cover",
+    ctrlSample: "Sample Preview",
     catAll: "All Books",
     catPolitics: "Politics & History",
     catPhilosophy: "Philosophy & Thought",
     catUrdu: "Urdu Editions (اردو)",
     catEnglish: "English Editions",
     perk1Title: "Instant Digital Delivery",
-    perk1Desc: "Immediate file access on WhatsApp & Email",
+    perk1Desc: "Direct PDF access on WhatsApp & Email within 2 mins",
     perk2Title: "Verified Full Editions",
-    perk2Desc: "100% unabridged official publisher copies",
+    perk2Desc: "100% complete 325 pages with documentation",
     perk3Title: "Easy Local Payments",
-    perk3Desc: "Easypaisa, JazzCash & Direct Bank Transfer",
+    perk3Desc: "Easypaisa, JazzCash, Raast & Direct Bank Transfer",
     perk4Title: "Universal Compatibility",
-    perk4Desc: "Works on iPhone, Android, iPad & Kindle",
+    perk4Desc: "Works smoothly on iPhone, Android, iPad & Kindle",
     catalogTitle: "Digital PDF Catalog",
     catalogSubtitle: "Select any book to preview free sample pages or purchase instant PDF access.",
     spotlightBadge: "FEATURED RELEASE OF THE YEAR",
@@ -219,18 +237,36 @@ const translations = {
     navAbout: "ہمارے بارے میں",
     navFaq: "عمومی سوالات",
     btnHeaderBuy: "فوری خریداری",
-    heroOverline: "حرف و نقطہ ڈیجیٹل کتب خانہ • HARFNUQTA.STORE",
-    heroHeadline: "سیاست، تاریخ اور فکری موضوعات پر مستند پی ڈی ایف کتب",
-    heroSubtext: "مستند، غیر محذوف اور اعلیٰ ریزولوشن ای بکس باآسانی حاصل کریں۔ اپنے موبائل، ٹیبلٹ اور کمپیوٹر پر فوری ڈاؤنلوڈ کریں۔",
+    heroOverline: "سال کی سب سے اہم دستاویزی اشاعت • حرف و نقطہ",
+    heroKicker: "پاکستانی سیاست کی 40 سالہ پسِ پردہ دستاویزی تاریخ",
+    heroTitleMain: "اقتدار کے پار",
+    heroTitleUrdu: "(حکمت، سیاست، مزاحمت)",
+    heroTagline: "مولانا فضل الرحمن کے سیاسی و پارلیمانی سفر کا غیر جانبدارانہ پوسٹ مارٹم",
+    heroSubtext: "مولانا فضل الرحمن کی 40 سالہ پارلیمانی سیاست، ایم آر ڈی و پی ڈی ایم تحریکوں، اور 18ویں و 26ویں آئینی ترمیم کے پس پردہ حقائق پر مبنی 325 صفحات کی مکمل مستند پی ڈی ایف۔ مصنفین: رشید یوسفزئی و محمد امین اسد۔",
+    specPill1: "325 صفحات (مکمل کتاب)",
+    specPill2: "واٹس ایپ و ای میل پر فوری ترسیل",
+    specPill3: "دستاویزی شواہد اور نایاب تصاویر",
+    specPill4: "موبائل، ٹیبلٹ اور کنڈل پر قابلِ مطالعہ",
+    heroPriceLabel: "خصوصی تعارفی رعایت:",
+    heroDiscountBadge: "80% بچت",
+    heroDeliveryNotice: "صرف 2 منٹ میں فوری فراہمی",
+    heroBtnOrder: "واٹس ایپ پر فوری حاصل کریں (500 روپے)",
+    heroBtnSample: "مفت نمونہ اور فہرست پڑھیں",
+    heroBtnCheckout: "ایزی پیسہ / جاز کیش ↓",
+    heroTrustRating: "4.9/5 (184+ قارئین کی پسند)",
+    heroTrustUnabridged: "100% غیر محذوف اصل اشاعت",
+    ctrlFront: "سامنے کا کور",
+    ctrlBack: "پچھلا کور",
+    ctrlSample: "مفت نمونہ",
     catAll: "تمام کتب",
     catPolitics: "سیاست و تاریخ",
     catPhilosophy: "فکری و فلسفہ",
     catUrdu: "اردو ایڈیشنز",
     catEnglish: "English Editions",
     perk1Title: "فوری ڈیجیٹل ڈلیوری",
-    perk1Desc: "واٹس ایپ اور ای میل پر براہِ راست فائل کی فراہمی",
+    perk1Desc: "واٹس ایپ اور ای میل پر براہِ راست فائل کی فوری فراہمی",
     perk2Title: "مستند مکمل کتب",
-    perk2Desc: "ناشر کے باقاعدہ کاپی رائٹ کے ساتھ غیر محذوف ایڈیشنز",
+    perk2Desc: "325 صفحات، تمام ابواب اور دستاویزی شواہد کے ساتھ",
     perk3Title: "آسان لوکل ادائیگی",
     perk3Desc: "ایزی پیسہ، جاز کیش اور بینک اکاؤنٹ کی سہولت",
     perk4Title: "تمام ڈیوائسز پر سپورٹ",
@@ -316,9 +352,60 @@ function setLanguage(lang) {
     if (dict[k]) el.innerText = dict[k];
   });
 
+  // Dynamically update 3D book cover image
+  const heroCover = document.getElementById("heroFrontCoverImg");
+  if (heroCover) {
+    heroCover.src = isUr ? "front_cover_cropped.jpg" : "front_cover_roman_urdu.png";
+  }
+
   // Re-render grid
   renderStoreGrid();
   refreshPaymentBox();
+}
+
+// 3D Book Interactive Flip Controllers
+function toggleBookFlip() {
+  const card = document.getElementById("book3dCard");
+  if (!card) return;
+  const isFlipped = card.classList.contains("is-flipped");
+  setBookView(isFlipped ? "front" : "back");
+}
+
+function setBookView(view) {
+  const card = document.getElementById("book3dCard");
+  const btnFront = document.getElementById("btnViewFront");
+  const btnBack = document.getElementById("btnViewBack");
+  if (!card) return;
+
+  if (view === "back") {
+    card.classList.add("is-flipped");
+    if (btnFront) btnFront.classList.remove("active");
+    if (btnBack) btnBack.classList.add("active");
+  } else {
+    card.classList.remove("is-flipped");
+    if (btnFront) btnFront.classList.add("active");
+    if (btnBack) btnBack.classList.remove("active");
+  }
+}
+
+// Hero Direct WhatsApp Order
+function launchWhatsAppHeroOrder() {
+  const isUr = currentLang === "ur";
+  const title = isUr 
+    ? "اقتدار کے پار (حکمت، سیاست، مزاحمت) - مکمل 325 صفحات پی ڈی ایف"
+    : "Iqtidaar Ke Paar / Beyond Power - Complete PDF (325 Pages)";
+
+  let msg = isUr
+    ? `السلام علیکم! میں حرف و نقطہ بک اسٹور (harfnuqta.store) سے باضابطہ پی ڈی ایف کتاب آرڈر کرنا چاہتا ہوں:\n\n` +
+      `📖 کتاب: ${title}\n` +
+      `💰 تعارفی قیمت: PKR 500 (80% بچت • اصل 2,500 روپے)\n` +
+      `⚡ براہ کرم ادائیگی (ایزی پیسہ / جاز کیش / بینک) کی تفصیلات بھیج کر فوری واٹس ایپ پر فائل ارسال کریں۔ شکریہ!`
+    : `Hello! I would like to order the official unabridged PDF edition from Harf & Nuqta Bookstore (harfnuqta.store):\n\n` +
+      `📖 Book: ${title}\n` +
+      `💰 Special Launch Price: PKR 500 (Save 80% • Was PKR 2,500)\n` +
+      `⚡ Please share payment details (Easypaisa / JazzCash / Bank) and dispatch my high-resolution PDF file to this WhatsApp number. Thank you!`;
+
+  window.open(`https://wa.me/${OFFICIAL_WHATSAPP}?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
 // ==========================================
